@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int totalEstudiantes;
+    cout << "Ingrese la cantidad total de estudiantes: ";
+    cin >> totalEstudiantes;
+
+    int buses = totalEstudiantes / 40;
+    int restoBuses = totalEstudiantes % 40;
+
+    int minivans = restoBuses / 10;
+    int restoMinivans = restoBuses % 10;
+
+    int taxis = restoMinivans / 4;
+    int particular = restoMinivans % 4;
+
+    cout << "Buses: " << buses << endl;
+    cout << "Minivans: " << minivans << endl;
+    cout << "Taxis: " << taxis << endl;
+    cout << "Estudiantes en movilidad particular: " << particular << endl;
+
+    return 0;
+}

@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int numero;
+    cout << "Ingrese un numero de 3 digitos: ";
+    cin >> numero;
+
+    int ultimo = numero % 10;
+    int primeros = numero / 10;
+    int rotado = (ultimo * 100) + primeros;
+
+    cout << "Numero rotado: " << rotado << endl;
+
+    return 0;
+}

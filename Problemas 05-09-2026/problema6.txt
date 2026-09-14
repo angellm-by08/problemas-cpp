@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int totalCm;
+    cout << "Ingrese la distancia en centimetros: ";
+    cin >> totalCm;
+
+    int kilometros = totalCm / 100000;
+    int restoKm = totalCm % 100000;
+
+    int metros = restoKm / 100;
+    int centimetros = restoKm % 100;
+
+    cout << "Kilometros: " << kilometros << endl;
+    cout << "Metros: " << metros << endl;
+    cout << "Centimetros sobrantes: " << centimetros << endl;
+
+    return 0;
+}

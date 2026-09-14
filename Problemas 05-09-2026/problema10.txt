@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int totalHoras;
+    cout << "Ingrese el total de horas estimadas: ";
+    cin >> totalHoras;
+
+    int semanasLaborales = totalHoras / 40;
+    int restoSemanas = totalHoras % 40;
+
+    int diasLaborales = restoSemanas / 8;
+    int horasRestantes = restoSemanas % 8;
+
+    cout << "Semanas laborales: " << semanasLaborales << endl;
+    cout << "Dias laborales: " << diasLaborales << endl;
+    cout << "Horas restantes: " << horasRestantes << endl;
+
+    return 0;
+}

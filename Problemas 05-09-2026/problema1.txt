@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int diasTotales;
+    cout << "Ingrese el total de dias: ";
+    cin >> diasTotales;
+
+    int semanas = diasTotales / 7;
+    int diasRestantes = diasTotales % 7;
+
+    cout << "Semanas completas: " << semanas << endl;
+    cout << "Dias restantes: " << diasRestantes << endl;
+
+    return 0;
+}

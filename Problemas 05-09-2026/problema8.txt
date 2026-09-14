@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int totalPeniques;
+    cout << "Ingrese el monto en peniques: ";
+    cin >> totalPeniques;
+
+    int libras = totalPeniques / 240;
+    int restoLibras = totalPeniques % 240;
+
+    int chelines = restoLibras / 12;
+    int peniques = restoLibras % 12;
+
+    cout << "Libras: " << libras << endl;
+    cout << "Chelines: " << chelines << endl;
+    cout << "Peniques sobrantes: " << peniques << endl;
+
+    return 0;
+}

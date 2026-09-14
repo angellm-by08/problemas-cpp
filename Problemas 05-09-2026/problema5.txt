@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int diasTotales;
+    cout << "Ingrese la cantidad total de dias: ";
+    cin >> diasTotales;
+
+    int anios = diasTotales / 365;
+    int diasSobrantes = diasTotales % 365;
+
+    int meses = diasSobrantes / 30;
+    int dias = diasSobrantes % 30;
+
+    cout << "Anios: " << anios << endl;
+    cout << "Meses: " << meses << endl;
+    cout << "Dias: " << dias << endl;
+
+    return 0;
+}

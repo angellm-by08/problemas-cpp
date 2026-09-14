@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int totalMinutos;
+    cout << "Ingrese la cantidad total de minutos: ";
+    cin >> totalMinutos;
+
+    int semanas = totalMinutos / 10080;
+    int restoSemanas = totalMinutos % 10080;
+
+    int dias = restoSemanas / 1440;
+    int restoDias = restoSemanas % 1440;
+
+    int horas = restoDias / 60;
+    int minutos = restoDias % 60;
+
+    cout << "Semanas: " << semanas << endl;
+    cout << "Dias: " << dias << endl;
+    cout << "Horas: " << horas << endl;
+    cout << "Minutos sobrantes: " << minutos << endl;
+
+    return 0;
+}
